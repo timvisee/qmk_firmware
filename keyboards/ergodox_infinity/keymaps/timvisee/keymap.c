@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |---------+------+------+------+------+------| DBG  |           | DBG  |------+------+------+------+------+--------|
  * |         |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
  * `---------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | FLASH |      |      |      |      |                                       |      |    . |   0  |   =  | FLASH|
+ *   | FLASH |      |      |TerOn |TerOff|                                       |      |    . |   0  |   =  | FLASH|
  *   `-----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | Vol- | Vol+ |       | PL/PS| NEXT |
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_TRNS,KC_UP,  KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
        KC_CAPS,KC_LEFT,KC_DOWN,KC_RGHT,KC_TRNS,KC_TRNS,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,DEBUG,
-         RESET,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+         RESET,KC_TRNS,KC_TRNS,TERM_ON,TERM_OFF,
                                        KC_VOLU,KC_VOLD,
                                                KC_TRNS,
                                KC_INS, BL_DEC, KC_TRNS,
