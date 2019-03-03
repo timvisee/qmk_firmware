@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   KC_LBRC,
         KC_LCTRL,       KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   KC_LPRN,
-        KC_LCTRL,       KC_LGUI,      KC_LALT,LCTL(LALT(KC_T)),LCTL(KC_B),
+        KC_LCTRL,       KC_LGUI,      KC_LALT,LCA(KC_T),      LCTL(KC_B),
                                                KC_HOME,       KC_END,
                                                               TG(SYMB),
                                                KC_SPC,KC_ESC ,MO(SYMB),
@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_CAPS,KC_LEFT,KC_DOWN,KC_RGHT,KC_TRNS,KC_TRNS,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,DEBUG,
          RESET,KC_TRNS,KC_TRNS,TERM_ON,TERM_OFF,
-                                       KC_VOLU,KC_VOLD,
+                                       KC_VOLD,KC_VOLU,
                                                KC_TRNS,
                                KC_INS, BL_DEC, KC_TRNS,
        // right hand
