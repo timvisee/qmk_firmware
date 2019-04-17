@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,---------------------------------------------------.           ,--------------------------------------------------.
  * | Version |  F1  |  F2  |  F3  |  F4  |  F5  | F11  |           | F12  |  F6  |  F7  |  F8  |  F9  |  F10 |        |
  * |---------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * |         |      |   ↑  |      |      |      |      |           |      |      |      |      |      |      |        |
+ * |         |      |   ↑  |      |      |      |      |           |      |      |      | Ins  |      |      |        |
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | CapsLck |   ←  |   ↓  |   →  |      |      |------|           |------|   ←  |  ↓   |  ↑   |  →   |      |        |
  * |---------+------+------+------+------+------| DBG  |           | DBG  |------+------+------+------+------+--------|
@@ -78,9 +78,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,-------------.
  *                                        | Vol- | Vol+ |       | PL/PS| NEXT |
  *                                 ,------|------|------|       |------+------+------.
- *                                 |      |      | Ins  |       |      |      |      |
+ *                                 |      |      |      |       |      |      |      |
  *                                 |      |      |------|       |------|      | DEL  |
- *                                 |      |      | LGUI |       |      |      |      |
+ *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
 // SYMBOLS
@@ -92,11 +92,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,DEBUG,
          RESET,KC_TRNS,KC_TRNS,TERM_ON,TERM_OFF,
                                        KC_VOLD,KC_VOLU,
-                                               KC_INS,
-                               KC_TRNS,KC_TRNS,BL_DEC,
+                                               KC_TRNS,
+                               KC_TRNS,KC_TRNS,KC_TRNS,
        // right hand
        KC_F12,  KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS,KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_TRNS, KC_TRNS, KC_TRNS,KC_INS,  KC_TRNS, KC_TRNS, KC_TRNS,
                 KC_LEFT, KC_DOWN,KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS,
        DEBUG,   KC_TRNS, KC_TRNS,KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                          KC_TRNS,KC_DOT,  KC_0,    KC_EQL,  RESET,
