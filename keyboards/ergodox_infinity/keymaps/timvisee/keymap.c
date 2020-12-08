@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  (   |           |   )  |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   |   \    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | LCtrl| LGUI | LAltf|C+A+T |Ctrl+B|                                       | RShft| App  | RAlt | RGui | RCtrl|
+ *   | LCtrl| LGUI | LAltf|C+A+T |Ctrl+B|                                       | RShft| PrScr| RAlt | RGui | RCtrl|
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | Home | End  |       | PGDN | PGUP   |
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_RBRC,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_EQUAL,
                           KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,          KC_QUOTE,
              KC_RPRN,     KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,          KC_BSLASH,
-                                  KC_RSFT,KC_APP, KC_RALT,KC_RGUI,          KC_RCTRL,
+                                  KC_RSFT,KC_PSCR,KC_RALT,KC_RGUI,          KC_RCTRL,
              KC_PGDN,        KC_PGUP,
              TG(MDIA),
              MO(SYMB),KC_ENT, KC_BSPC
@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |---------+------+------+------+------+------| DBG  |           | DBG  |------+------+------+------+------+--------|
  * |         |      |      |      |      |      |      |           |      | Nlck |      |      |      |      |        |
  * `---------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | FLASH |      |      |TerOn |TerOff|                                       |      |    . |   0  |   =  | FLASH|
+ *   | FLASH |      |      |TerOn |TerOff|                                       |      | App  |   0  |   =  | FLASH|
  *   `-----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | Vol- | Vol+ |       | PL/PS| NEXT |
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS, KC_TRNS, KC_TRNS,KC_INS,  KC_TRNS, KC_TRNS, KC_TRNS,
                 KC_LEFT, KC_DOWN,KC_UP,   KC_RGHT, KC_TRNS, KC_TRNS,
        DEBUG,   KC_NLCK, KC_TRNS,KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS,KC_DOT,  KC_0,    KC_EQL,  RESET,
+                         KC_TRNS,KC_APP,  KC_0,    KC_EQL,  RESET,
        KC_MPLY, KC_MNXT,
        KC_TRNS,
        KC_TRNS, KC_TRNS, KC_DEL
